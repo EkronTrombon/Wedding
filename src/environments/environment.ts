@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  url: 'https://us-central1-wedding-d0e4c.cloudfunctions.net/api'
 };
 
 /*

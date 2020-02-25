@@ -1,0 +1,65 @@
+<app-header page="contact"></app-header>
+
+<div class="fh5co-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-push-6 animated fadeIn">
+                <h3>Get In Touch</h3>
+                <form #formContact="ngForm" (ngSubmit)="contact(formContact)">
+                    <div class="row form-group">
+                        <div class="col-md-6">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="firstName" class="form-control" placeholder="Your firstname" [(ngModel)]="newContact.firstName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lastName" class="form-control" placeholder="Your lastname" [(ngModel)]="newContact.lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="Your email address" [(ngModel)]="newContact.email" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" class="form-control" placeholder="Your subject of this message" [(ngModel)]="newContact.subject" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label for="message">Message</label>
+                            <textarea name="message" name="message" cols="30" rows="10" class="form-control" placeholder="Write us something" [(ngModel)]="newContact.message" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary">
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-5 col-md-pull-5 animated fadeIn">
+
+                <div class="fh5co-contact-info">
+                    <h3>Venue Information</h3>
+                    <p>INDIAN WELLS GOLF RESORT</p>
+                    <ul>
+                        <li class="address">44-500 Indian Wells LN, <br> INDIAN WELLS, CA 92210</li>
+                        <li class="phone"><a href="#">+ 1 760 346 4653</a></li>
+                        <li class="email"><a href="mailto:mtebbetts@iwgr.com">mtebbetts@iwgr.com</a></li>
+                        <li class="url"><a href="https://www.indianwellsgolfresort.com" target="_blank">www.indianwellsgolfresort.com</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- <div id="map" class="fh5co-map"></div> -->

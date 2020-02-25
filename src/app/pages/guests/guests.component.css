@@ -1,0 +1,111 @@
+.team-title {
+    text-align: center;
+}
+
+.team-title h4 {
+    font-family: "Alex Brush", Arial, serif;
+    color: #761F32;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0;
+}
+
+.imgs {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin: 10px 0 10px 0;
+}
+
+.info-1 {
+    background: rgba(0, 0, 0, 0.8);
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+.infos h3 {
+    color: #F6E5C0;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    font-family: "Alex Brush", Arial, serif;
+    font-size: 25px;
+    height: 30px;
+    margin: 0;
+    padding: 55px 0 15px 0;
+    text-shadow: 1.5px 1px #761F32, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.infos p {
+    font-size: 15px;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    margin: 0 30px;
+    line-height: 1.7;
+}
+
+.infos p a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.img-1 {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 10px rgba(118, 31, 50, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.img-1-best {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 10px rgba(119, 129, 92, 0.5), 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.img-1:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.img-1-best:hover {
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.imgs:hover .infos {
+    transform: scale(1);
+    opacity: 1;
+}
+
+@media (max-width: 746px) {
+    .imgs {
+        width: 130px;
+        height: 130px;
+        margin: 5px 0 5px 0;
+    }
+    .infos h3 {
+        color: #F6E5C0;
+        /* text-transform: uppercase; */
+        letter-spacing: 2px;
+        font-family: "Alex Brush", Arial, serif;
+        font-size: 15px;
+        height: 30px;
+        margin: 0;
+        padding: 55px 0 15px 0;
+        text-shadow: 1.5px 1px #761F32, 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+}

@@ -92,17 +92,17 @@ figure {
 
 ::-webkit-selection {
     color: #fff;
-    background: #F14E95;
+    background: #761F32;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #F14E95;
+    background: #761F32;
 }
 
 ::selection {
     color: #fff;
-    background: #F14E95;
+    background: #761F32;
 }
 
 .fh5co-nav {
@@ -874,7 +874,7 @@ figure {
     display: inline-block;
     zoom: 1;
     *display: inline;
-    color: #F14E95;
+    color: #761F32;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -1336,7 +1336,7 @@ form label {
     height: 90px;
     font-size: 40px;
     line-height: 40px;
-    color: #F14E95;
+    color: #761F32;
 }
 
 .feature-center p,
@@ -1657,7 +1657,7 @@ form label {
 
 .owl-carousel .owl-controls .owl-dot.active span {
     background: transparent;
-    border: 2px solid #F14E95;
+    border: 2px solid #761F32;
 }
 
 #fh5co-offcanvas {
@@ -1776,8 +1776,9 @@ form label {
     width: 50px;
     height: 50px;
     display: table;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    background: rgba(246, 229, 192, 0.5);
+    color: #761F32;
+    border: 1.5px solid #761F32;
     text-align: center;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -1796,6 +1797,9 @@ form label {
 .gototop a:focus {
     text-decoration: none;
     outline: none;
+    background: rgba(119, 129, 92, 0.5);
+    color: #F6E5C0;
+    border: 1.5px solid #F6E5C0;
 }
 
 .fh5co-nav-toggle {
@@ -2120,7 +2124,7 @@ form label {
 .form-control {
     box-shadow: none;
     background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(118, 31, 50, 0.5);
     height: 54px;
     font-size: 18px;
     font-weight: 300;
@@ -2130,7 +2134,7 @@ form label {
 .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-color: #F14E95;
+    border-color: #77815C;
 }
 
 .row-pb-md {

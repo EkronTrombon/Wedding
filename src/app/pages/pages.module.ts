@@ -9,9 +9,10 @@ import { WeddingComponent } from './wedding/wedding.component';
 import { GuestsComponent } from './guests/guests.component';
 import { ContactComponent } from './contact/contact.component';
 import { SharedModule } from '../shared/shared.module';
+import { PrehomeComponent } from './prehome/prehome.component';
 
 @NgModule({
-  declarations: [HomeComponent, OurStoryComponent, WeddingComponent, GuestsComponent, ContactComponent],
+  declarations: [HomeComponent, OurStoryComponent, WeddingComponent, GuestsComponent, ContactComponent, PrehomeComponent],
   imports: [
     CommonModule,
     FormsModule,

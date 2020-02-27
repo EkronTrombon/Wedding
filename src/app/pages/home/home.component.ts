@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { NgForm } from '@angular/forms';
 import { Attending } from '../../interfaces/interfaces';
 import { WeddingService } from '../../services/wedding.service';
@@ -16,9 +17,12 @@ export class HomeComponent implements OnInit {
   };
   attendings: Attending[] = [];
 
-  constructor(private weddingService: WeddingService) {}
+  constructor(private weddingService: WeddingService,
+              private title: Title) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.title.setTitle('Ashley & Xabier');
+  }
 
   async attending(formAttending: NgForm) {
     if (formAttending.invalid) {

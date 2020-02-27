@@ -1,3 +1,29 @@
+<header *ngIf="page === 'prehome'" id="fh5co-header" class="fh5co-cover" role="banner" [ngStyle]="{'background-image': 'url(assets/img/' + backgroundImg + ')'}">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="display-t">
+                    <div class="display-tc animated fadeInDown" data-animate-effect="fadeIn">
+                        <h1>{{ title }}</h1>
+                        <h2>Text the password to see the Website</h2>
+                        <form #formPrehome="ngForm" (ngSubmit)="confirmPassword(formPrehome)">
+                            <div class="form-group formStyle">
+                                <div class="formInput">
+                                    <input type="text" class="form-control" name="password" placeholder="Password" [(ngModel)]="password" required>
+                                </div>
+                                <div class="formBtn">
+                                    <button type="submit" class="btn btn-default btn-block">Take me to the Web!</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
 <header *ngIf="page === 'home'" id="fh5co-header" class="fh5co-cover" role="banner" [ngStyle]="{'background-image': 'url(assets/img/' + backgroundImg + ')'}">
     <div class="overlay"></div>
     <div class="container">
@@ -18,7 +44,7 @@
     </div>
 </header>
 
-<header *ngIf="page !== 'home'" id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" [ngStyle]="{'background-image': 'url(assets/img/' + backgroundImg + ')'}">
+<header *ngIf="page !== 'home' && page !== 'prehome'" id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" [ngStyle]="{'background-image': 'url(assets/img/' + backgroundImg + ')'}">
     <div class="overlay"></div>
     <div class="fh5co-container">
         <div class="row">

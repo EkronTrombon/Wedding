@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +13,10 @@ export class HeaderComponent implements OnInit {
   @Input() page: string;
 
   backgroundImg = 'home_header.jpg';
-  title = 'Ashley &amp Xabier';
+  title = 'Ashley & Xabier';
+  password = '';
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     switch (this.page) {
@@ -38,9 +42,22 @@ export class HeaderComponent implements OnInit {
         break;
       default:
         this.backgroundImg = 'home_header.jpg';
-        this.title = 'Ashley &amp Xabier';
+        this.title = 'Ashley & Xabier';
         break;
     }
+  }
+
+  confirmPassword(formPrehome: NgForm) {
+    if (formPrehome.invalid) {
+      Swal.fire('Action required', 'Text the password to see the Website', 'warning');
+      return;
+    }
+    if (formPrehome.value.password === 'AshleyXabier2020') {
+      this.router.navigate(['/home']);
+    } else {
+      Swal.fire('Ooopss...', 'The password is not correct!', 'error');
+    }
+    this.password = '';
   }
 
 }

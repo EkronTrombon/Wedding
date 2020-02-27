@@ -1,0 +1,18 @@
+.formStyle {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.formInput {
+    padding: 0 10px;
+}
+
+.formInput input {
+    background: rgba(246, 229, 192, 0.5);
+    color: #761F32;
+}
+
+.formBtn {
+    padding: 0 10px;
+}

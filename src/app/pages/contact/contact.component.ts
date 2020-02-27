@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Contacts } from '../../interfaces/interfaces';
 import { WeddingService } from '../../services/wedding.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -19,9 +20,12 @@ export class ContactComponent implements OnInit {
   };
   contacts: Contacts[] = [];
 
-  constructor(private weddingService: WeddingService) {}
+  constructor(private weddingService: WeddingService,
+              private title: Title) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.title.setTitle('Contact');
+  }
 
   async contact(formContact: NgForm) {
     if (formContact.invalid) {
